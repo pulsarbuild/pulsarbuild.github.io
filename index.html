@@ -1,1 +1,94 @@
-PulsarBuild, stop maintaining your CI, focus on your mission.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsarbuild - Automate Your CI Pipelines</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* To prevent scrollbars if image is slightly larger */
+        }
+
+        .hero-section {
+            /* Replace BACKGROND_IMAGE_URL with the actual URL/path to your image */
+            background-image: url('/pulsarbuild.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column; /* Stack slogan and tagline vertically */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative; /* For pseudo-element overlay */
+            padding: 20px; /* Add some padding for smaller screens */
+            box-sizing: border-box; /* Ensure padding doesn't add to height/width */
+        }
+
+        /* Optional: Add a semi-transparent overlay for better text readability */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            position: relative; /* Ensure z-index takes effect */
+            z-index: 2; /* Ensure content is above the overlay */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slogan {
+            font-size: 3em; /* Adjust size as needed */
+            color: white;
+            font-weight: bold;
+            margin-bottom: 0.5em; /* Space between slogan and tagline */
+        }
+
+        .tagline {
+            font-size: 1.3em; /* Adjust size as needed */
+            color: #f0f0f0; /* Slightly off-white for differentiation */
+            font-weight: normal;
+            max-width: 800px; /* Constrain width for better readability on large screens */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .slogan {
+                font-size: 2.2em;
+            }
+            .tagline {
+                font-size: 1.2em;
+            }
+        }
+         @media (max-width: 480px) {
+            .slogan {
+                font-size: 1.8em;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="content-wrapper">
+            <h1 class="slogan">You innovate, we do the boring part.</h1>
+            <p class="tagline">Automates your artifacts build process with PulsarBuild.</p>
+        </div>
+    </div>
+</body>
+</html>
